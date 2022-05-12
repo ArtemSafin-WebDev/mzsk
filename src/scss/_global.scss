@@ -32,6 +32,13 @@ html {
         font-size: clamp(4px, 0.595vw, 10px);
     }
 
+    @media screen and (min-width: 2560px) {
+        font-size: 12px;
+    }
+    @media screen and (min-width: 4096px) {
+        font-size: 20px;
+    }
+
     @include breakpoint(mobile) {
         font-size: 10px;
     }
