@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>
+        Главная страница
+    </title>
+</head>
+
+<body class="no-touch" ontouchstart="">
+    <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 20 14" id="arrow-left" xmlns="http://www.w3.org/2000/svg"><path d="M11 13.5a.52.52 0 01-.42-.22l-4-6a.52.52 0 010-.56l4-6a.5.5 0 11.84.56L7.6 7l3.82 5.72a.51.51 0 01-.14.7.57.57 0 01-.28.08z"/></symbol><symbol viewBox="0 0 20 14" id="arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M9 13.5a.57.57 0 01-.28-.08.51.51 0 01-.14-.7L12.4 7 8.58 1.28a.5.5 0 01.84-.56l4 6a.52.52 0 010 .56l-4 6a.52.52 0 01-.42.22z"/></symbol><symbol viewBox="0 0 15.85 15.85" id="diagonal-arrow" xmlns="http://www.w3.org/2000/svg"><path d="M14.15 1H.35V0h15.5v15.5h-1V1.71L.71 15.85l-.71-.7z"/><path d="M14.15 1H.35V0h15.5v15.5h-1V1.71L.71 15.85l-.71-.7z"/></symbol><symbol viewBox="0 0 24 24" id="doc" xmlns="http://www.w3.org/2000/svg"><path d="M18.77 6.06l-2.83-2.83a2.49 2.49 0 00-1.77-.73H7A2.5 2.5 0 004.5 5v14A2.5 2.5 0 007 21.5h10a2.5 2.5 0 002.5-2.5V7.83a2.49 2.49 0 00-.73-1.77zm-.71.71a1.51 1.51 0 01.4.73H15a.5.5 0 01-.5-.5V3.54a1.51 1.51 0 01.73.4zM17 20.5H7A1.5 1.5 0 015.5 19V5A1.5 1.5 0 017 3.5h6.5V7A1.5 1.5 0 0015 8.5h3.5V19a1.5 1.5 0 01-1.5 1.5z"/><path d="M12.65 14.74l-1.06 1V11a.5.5 0 00-1 0v4.79l-1.18-1.17a.49.49 0 10-.7.7l2 2a.36.36 0 00.16.11.43.43 0 00.19 0 .41.41 0 00.19 0 .36.36 0 00.16-.11l1.91-1.91a.49.49 0 00-.7-.7z"/></symbol></svg>    </div>
+
+    <div class="page-content">
+        
+        <main class="page-main">
+
+
+<section class="intro">
+    <div class="container">
+        <picture>
+            <source srcset="img/intro-mobile.jpg" media="(max-width: 640px)">
+            <img src="img/intro-desktop.jpg" alt="" class="intro__image">
+        </picture>
+    </div>
+</section>
+
+<header class="page-header">
+    <div class="container">
+        <div class="page-header__row">
+            <div class="page-header__sidebar">
+
+
+                <a href="#" class="page-header__logo">
+                    <img src="img/logo.png" alt="" class="page-header__logo-image">
+                </a>
+                <button class="page-header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="page-header__main-content">
+                <nav class="page-header__nav">
+                    <ul class="page-header__nav-list">
+                        <li class="page-header__nav-list-item">
+                            <a href="#" class="btn page-header__nav-link">
+                                Продукция
+                            </a>
+                        </li>
+                        <li class="page-header__nav-list-item">
+                            <a href="#" class="btn page-header__nav-link">
+                                Калькулятор
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="page-header__btns">
+                    <a href="#" class="btn page-header__btn">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-doc">
+                            <use xlink:href="#doc"></use>
+                        </svg>
+                        Скачать прайс-лист
+                    </a>
+                    <a href="#" class="btn page-header__btn">
+                        Контакты
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="title">
+    <div class="container">
+        <div class="title__row">
+            <div class="title__sidebar">
+                <a href="#" class="title__logo">
+                    <img src="img/logo.png" alt="" class="title__logo-image">
+                </a>
+            </div>
+            <div class="title__main">
+                <h1 class="main-heading title__heading">
+                    МАРИЙСКИЙ ЗАВОД
+                    СИЛИКАТНОГО
+                    КИРПИЧА
+                </h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="news">
+    <div class="container">
+        <div class="news__content">
+            <div class="news__slider js-news-slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="news__slider-card">
+                                <div class="news__slider-card-image-container">
+                                    <img src="img/news/1.jpg" alt="" class="news__slider-card-image">
+                                </div>
+                                <div class="news__slider-card-row">
+                                    <h3 class="news__slider-card-title">
+                                        Генеральный партнер - ООО РУСАГРОСТРОЙ: строительство жилых домов
+                                    </h3>
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                        <use xlink:href="#diagonal-arrow"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="news__slider-card">
+                                <div class="news__slider-card-image-container">
+                                    <img src="img/news/2.jpg" alt="" class="news__slider-card-image">
+                                </div>
+                                <div class="news__slider-card-row">
+                                    <h3 class="news__slider-card-title">
+                                        Сбербанк. Безопасные рассчеты, выгодные ставки - 5%
+                                    </h3>
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                        <use xlink:href="#diagonal-arrow"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="news__slider-card">
+                                <div class="news__slider-card-image-container">
+                                    <img src="img/news/3.jpg" alt="" class="news__slider-card-image">
+                                </div>
+                                <div class="news__slider-card-row">
+                                    <h3 class="news__slider-card-title">
+                                        Ипотека от Сбербанка на строительство жилого дома
+                                    </h3>
+                                    <svg width="14" height="14" aria-hidden="true" class="icon-diagonal-arrow">
+                                        <use xlink:href="#diagonal-arrow"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="about">
+    <div class="container">
+        <div class="about__row">
+            <div class="about__sidebar">
+                <h2 class="small-heading about__small-heading">
+                    О компании
+                </h2>
+            </div>
+            <div class="about__main">
+                <h3 class="medium-heading about__medium-heading">
+                    Марийский завод силикатного кирпича – одно из ведущих предприятий по производству строительных
+                    материалов в Республике Марий Эл
+                </h3>
+                <a href="#" class="btn about__link">
+                    Подробнее
+                </a>
+
+            </div>
+        </div>
+        <div class="about__bottom-row">
+            <div class="about__docs">
+                <div class="certificates about__docs-item">
+                    <h4 class="certificates__heading">
+                        Награды
+                    </h4>
+                    <ul class="certificates__list">
+                        <li class="certificates__list-item">
+                            <a href="#" class="certificates__card">
+                                <img src="img/awards/1.svg" alt="" class="certificates__card-image">
+                            </a>
+                        </li>
+                        <li class="certificates__list-item">
+                            <a href="#" class="certificates__card">
+                                <img src="img/awards/2.svg" alt="" class="certificates__card-image">
+                            </a>
+                        </li>
+                        <li class="certificates__list-item">
+                            <a href="#" class="certificates__card">
+                                <img src="img/awards/3.svg" alt="" class="certificates__card-image">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="certificates about__docs-item">
+                    <h4 class="certificates__heading">
+                        Сертификаты
+                    </h4>
+                    <ul class="certificates__list">
+                        <li class="certificates__list-item">
+                            <a href="#" class="certificates__card">
+                                <img src="img/certificates/1.jpg" alt="" class="certificates__card-image">
+                            </a>
+                        </li>
+                        <li class="certificates__list-item">
+                            <a href="#" class="certificates__card">
+                                <img src="img/certificates/2.jpg" alt="" class="certificates__card-image">
+                            </a>
+                        </li>
+                        <li class="certificates__list-item">
+                            <a href="#" class="certificates__card">
+                                <img src="img/certificates/3.jpg" alt="" class="certificates__card-image">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about__numbers">
+                <div class="about__numbers-item">
+                    <div class="about__numbers-item-text">
+                        По объему ипотечных продаж в республике Марий Эл
+                    </div>
+                    <div class="about__numbers-item-place">
+                        №1
+                    </div>
+                </div>
+                <div class="about__numbers-item">
+                    <div class="about__numbers-item-text">
+                        Завод в России по производству силикатного кирпича
+                    </div>
+                    <div class="about__numbers-item-place">
+                        №3
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <picture>
+            <source srcset="img/about-mobile.jpg" media="(max-width: 640px)">
+            <img src="img/about-desktop.jpg" alt="" class="about__image">
+        </picture>
+
+    </div>
+</section>
+
+
+<section class="catalog">
+    <div class="container">
+        <div class="catalog__content">
+
+
+            <div class="catalog__top-row">
+                <div class="catalog__sidebar">
+                    <h2 class="small-heading catalog__small-heading">
+                        Продукция
+                    </h2>
+                </div>
+                <div class="catalog__main">
+                    <h3 class="medium-heading catalog__medium-heading">
+                        Предлагаем вам эксклюзивный ассортимент продукции
+                    </h3>
+                    <a href="#" class="btn catalog__link">
+                        В каталог
+                    </a>
+                </div>
+            </div>
+            <div class="catalog__slider js-catalog-slider">
+                <div class="catalog__slider-sidebar">
+                    <div class="slider-arrows catalog__arrows">
+                        <button class="slider-arrows__btn slider-arrows__btn--prev">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="slider-arrows__btn slider-arrows__btn--next">
+                            <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" class="btn catalog__slider-link">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-doc">
+                            <use xlink:href="#doc"></use>
+                        </svg>
+                        Скачать прайс-лист
+                    </a>
+                </div>
+                <div class="catalog__slider-main">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="product-card">
+                                    <div
+                                        class="product-card__image-container product-card__image-container--no-top-margin">
+                                        <img src="img/products/1.webp" alt="" class="product-card__image">
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h4 class="product-card__title">
+                                            Кирпич силикатный ГОСТ 379-2015
+                                        </h4>
+                                        <div class="product-card__desc">
+                                            Применяется для кладки и<br> отделки наружных и внутренних<br> стен зданий и
+                                            сооружений.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="product-card">
+                                    <div class="product-card__image-container">
+                                        <img src="img/products/2.webp" alt="" class="product-card__image">
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h4 class="product-card__title">
+                                            Мелкие стеновые блоки из ячеистого бетона
+                                        </h4>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="product-card">
+                                    <div class="product-card__image-container">
+                                        <img src="img/products/3.webp" alt="" class="product-card__image">
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h4 class="product-card__title">
+                                            Песок кварцевый ГОСТ 8736-88
+                                        </h4>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="product-card">
+                                    <div class="product-card__image-container">
+                                        <img src="img/products/4.webp" alt="" class="product-card__image">
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h4 class="product-card__title">
+                                            Сухие строительные смеси марки СИЛма
+                                        </h4>
+                                        <div class="product-card__desc">
+                                            Сухие строительные смеси - это многокомпонентные, составы на основе
+                                            наполнителей, заполнителей, вяжущих компонентов, модифицирующих добавок.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="product-card">
+                                    <div
+                                        class="product-card__image-container product-card__image-container--no-top-margin">
+                                        <img src="img/products/1.webp" alt="" class="product-card__image">
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h4 class="product-card__title">
+                                            Кирпич силикатный ГОСТ 379-2015
+                                        </h4>
+                                        <div class="product-card__desc">
+                                            Применяется для кладки и<br> отделки наружных и внутренних<br> стен зданий и
+                                            сооружений.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="product-card">
+                                    <div class="product-card__image-container">
+                                        <img src="img/products/2.webp" alt="" class="product-card__image">
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h4 class="product-card__title">
+                                            Мелкие стеновые блоки из ячеистого бетона
+                                        </h4>
+
+                                    </div>
+                                </a>
+                                <a href="#" class="product-card">
+                                    <div class="product-card__image-container">
+                                        <img src="img/products/3.webp" alt="" class="product-card__image">
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h4 class="product-card__title">
+                                            Песок кварцевый ГОСТ 8736-88
+                                        </h4>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="product-card">
+                                    <div class="product-card__image-container">
+                                        <img src="img/products/4.webp" alt="" class="product-card__image">
+                                    </div>
+                                    <div class="product-card__content">
+                                        <h4 class="product-card__title">
+                                            Сухие строительные смеси марки СИЛма
+                                        </h4>
+                                        <div class="product-card__desc">
+                                            Сухие строительные смеси - это многокомпонентные, составы на основе
+                                            наполнителей, заполнителей, вяжущих компонентов, модифицирующих добавок.
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="catalog__show-all js-show-all">
+            Больше продукции
+        </a>
+    </div>
+</section>
+
+
+<section class="solutions">
+    <div class="container">
+        <div class="solutions__content">
+            <div class="solutions__top-row">
+                <h2 class="small-heading solutions__small-heading">
+                    Готовые решения<br> по ИЖС
+                </h2>
+                <h3 class="large-heading solutions__large-heading">
+                    Текст — зафиксированная на каком-либо материальном носителе человеческая мысль
+                </h3>
+                <a href="#" class="btn btn--white solutions__link">
+                    Смотреть все
+                </a>
+            </div>
+            <div class="solutions__advantages">
+                <ul class="solutions__advantages-list">
+                    <li class="solutions__advantages-list-item">
+                        <div class="solutions__advantages-card">
+                            <div class="solutions__advantages-card-image-container">
+                                <img src="img/advantages/1.svg" alt="" class="solutions__advantages-card-image">
+                            </div>
+                            <h3 class="solutions__advantages-card-title">
+                                Гарант качества
+                            </h3>
+                            <div class="solutions__advantages-card-text">
+                                Гарантом качества материала выступает сам завод-производитель
+                            </div>
+                        </div>
+                    </li>
+                    <li class="solutions__advantages-list-item">
+                        <div class="solutions__advantages-card">
+                            <div class="solutions__advantages-card-image-container">
+                                <img src="img/advantages/2.svg" alt="" class="solutions__advantages-card-image">
+                            </div>
+                            <h3 class="solutions__advantages-card-title">
+                                Поставка материалов
+                            </h3>
+                            <div class="solutions__advantages-card-text">
+                                Все клиенты по ИЖС находятся в приоритете поставки материалов
+                            </div>
+                        </div>
+                    </li>
+                    <li class="solutions__advantages-list-item">
+                        <div class="solutions__advantages-card">
+                            <div class="solutions__advantages-card-image-container">
+                                <img src="img/advantages/3.svg" alt="" class="solutions__advantages-card-image">
+                            </div>
+                            <h3 class="solutions__advantages-card-title">
+                                Экономия до 50%
+                            </h3>
+                            <div class="solutions__advantages-card-text">
+                                Сокращение итоговой стоимости за счет использования своих материалов
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="solutions__products">
+                <ul class="solutions__products-list">
+                    <li class="solutions__products-list-item">
+                        <div class="solutions__products-card">
+                            <div class="solutions__products-card-image-container">
+                                <img data-src="img/houses/1.jpg" alt="" class="solutions__products-card-image lazyload">
+                            </div>
+                            <div class="solutions__products-card-content">
+                                <h3 class="solutions__products-card-title">
+                                    Вилла в<br> итальянском стиле
+                                </h3>
+                                <div class="solutions__products-card-desc">
+                                    <p>
+                                        Прекрасная Вилла в Итальянском стиле. Отличное сочетание с виноградным краем
+                                        Абрау-Дюрсо.
+                                    </p>
+                                </div>
+                                <div class="solutions__products-card-info">
+                                    <div class="solutions__products-card-info-item">
+                                        <div class="solutions__products-card-info-item-key">
+                                            Площадь дома
+                                        </div>
+                                        <div class="solutions__products-card-info-item-value">
+                                            260 м2
+                                        </div>
+                                    </div>
+                                    <div class="solutions__products-card-info-item">
+                                        <div class="solutions__products-card-info-item-key">
+                                            Количество спален
+                                        </div>
+                                        <div class="solutions__products-card-info-item-value">
+                                            3
+                                        </div>
+                                    </div>
+                                    <div class="solutions__products-card-info-item">
+                                        <div class="solutions__products-card-info-item-key">
+                                            Размер участка
+                                        </div>
+                                        <div class="solutions__products-card-info-item-value">
+                                            10 соток
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="solutions__products-card-price">
+                                    <div class="solutions__products-card-price-title">
+                                        Стоимость
+                                    </div>
+                                    <div class="solutions__products-card-price-amount">
+                                        11 890 000 ₽
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn--white solutions__products-card-link">
+                                    Смотреть проект
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="solutions__products-list-item">
+                        <div class="solutions__products-card">
+                            <div class="solutions__products-card-image-container">
+                                <img data-src="img/houses/1.jpg" alt="" class="solutions__products-card-image lazyload">
+                            </div>
+                            <div class="solutions__products-card-content">
+                                <h3 class="solutions__products-card-title">
+                                    Вилла в марийском<br> стиле
+                                </h3>
+                                <div class="solutions__products-card-desc">
+                                    <p>
+                                        Прекрасная Вилла в Итальянском стиле. Отличное сочетание с виноградным краем
+                                        Абрау-Дюрсо.
+                                    </p>
+                                </div>
+                                <div class="solutions__products-card-info">
+                                    <div class="solutions__products-card-info-item">
+                                        <div class="solutions__products-card-info-item-key">
+                                            Площадь дома
+                                        </div>
+                                        <div class="solutions__products-card-info-item-value">
+                                            260 м2
+                                        </div>
+                                    </div>
+                                    <div class="solutions__products-card-info-item">
+                                        <div class="solutions__products-card-info-item-key">
+                                            Количество спален
+                                        </div>
+                                        <div class="solutions__products-card-info-item-value">
+                                            3
+                                        </div>
+                                    </div>
+                                    <div class="solutions__products-card-info-item">
+                                        <div class="solutions__products-card-info-item-key">
+                                            Размер участка
+                                        </div>
+                                        <div class="solutions__products-card-info-item-value">
+                                            10 соток
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="solutions__products-card-price">
+                                    <div class="solutions__products-card-price-title">
+                                        Стоимость
+                                    </div>
+                                    <div class="solutions__products-card-price-amount">
+                                        11 890 000 ₽
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn--white solutions__products-card-link">
+                                    Смотреть проект
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="solutions__custom">
+                <div class="solutions__custom-card">
+                    <div class="solutions__custom-card-bg">
+                        <picture>
+                            <source srcset="img/solutions-custom-mobile.jpg" media="(max-width: 640px)">
+                            <img src="img/solutions-custom-desktop.jpg" alt="" class="solutions__custom-card-bg-image">
+                        </picture>
+                    </div>
+                    <h3 class="large-heading solutions__custom-title">
+                        Не нашли готовое интересное решение?
+                    </h3>
+                    <div class="solutions__custom-text">
+                        <p>
+                            Закажите индивидуальное решение для вашего дома
+                        </p>
+                    </div>
+                    <a href="#" class="solutions__custom-link">
+                        Заказать проект
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="reviews">
+    <div class="container">
+        <div class="reviews__content">
+
+
+            <div class="reviews__top-row">
+                <div class="reviews__sidebar">
+                    <h2 class="small-heading reviews__small-heading">
+                        Отзывы наших<br> клиентов
+                    </h2>
+                </div>
+                <div class="reviews__main">
+                    <h3 class="medium-heading reviews__medium-heading">
+                        Нам доверяют крупнейшие строительные компании республики
+                    </h3>
+                </div>
+            </div>
+            <div class="reviews__slider js-reviews-slider">
+                <div class="reviews__slider-sidebar">
+                    <div class="reviews__slider-pagination">
+
+                    </div>
+                </div>
+                <div class="reviews__slider-main">
+                    <div class="reviews__slider-companies">
+                        <a href="#" class="reviews__slider-companies-link active">
+                            <img src="img/reviews-companies/1.webp" alt="" class="reviews__slider-companies-link-logo">
+                        </a>
+                        <a href="#" class="reviews__slider-companies-link">
+                            <img src="img/reviews-companies/2.webp" alt="" class="reviews__slider-companies-link-logo">
+                        </a>
+                        <a href="#" class="reviews__slider-companies-link">
+                            <img src="img/reviews-companies/3.webp" alt="" class="reviews__slider-companies-link-logo">
+                        </a>
+                    </div>
+                    <div class="reviews__slider-inner">
+                        <div class="reviews__slider-wrapper">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+
+
+                                    <div class="swiper-slide">
+                                        <div class="reviews__slider-card">
+                                            <div class="reviews__slider-card-author">
+                                                <div class="reviews__slider-card-author-image-container">
+                                                    <img src="img/author.webp" alt=""
+                                                        class="reviews__slider-card-author-image">
+                                                </div>
+                                                <div class="reviews__slider-card-author-info">
+
+
+                                                    <div class="reviews__slider-card-author-name">
+                                                        Арсен Разумовский
+                                                    </div>
+                                                    <div class="reviews__slider-card-author-role">
+                                                        CEO Dantoss
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="reviews__slider-card-content">
+                                                <p>
+                                                    Работы по установке насосного оборудования были выполнены
+                                                    качественно и
+                                                    в срок. Работая с нашими проектами, компания МЗСК проявила гибкость,
+                                                    взялась за выполнение нестандартного решения. Планируем и в
+                                                    дальнейшем
+                                                    продолжить совместную работу
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="reviews__slider-card">
+                                            <div class="reviews__slider-card-author">
+                                                <div class="reviews__slider-card-author-image-container">
+                                                    <img src="img/author.webp" alt=""
+                                                        class="reviews__slider-card-author-image">
+                                                </div>
+                                                <div class="reviews__slider-card-author-info">
+
+
+                                                    <div class="reviews__slider-card-author-name">
+                                                        Арсен Разумовский
+                                                    </div>
+                                                    <div class="reviews__slider-card-author-role">
+                                                        CEO Dantoss
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="reviews__slider-card-content">
+                                                <p>
+                                                    Работы по установке насосного оборудования были выполнены
+                                                    качественно и
+                                                    в срок. Работая с нашими проектами, компания МЗСК проявила гибкость,
+                                                    взялась за выполнение нестандартного решения. Планируем и в
+                                                    дальнейшем
+                                                    продолжить совместную работу
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="reviews__slider-card">
+                                            <div class="reviews__slider-card-author">
+                                                <div class="reviews__slider-card-author-image-container">
+                                                    <img src="img/author.webp" alt=""
+                                                        class="reviews__slider-card-author-image">
+                                                </div>
+                                                <div class="reviews__slider-card-author-info">
+
+
+                                                    <div class="reviews__slider-card-author-name">
+                                                        Арсен Разумовский
+                                                    </div>
+                                                    <div class="reviews__slider-card-author-role">
+                                                        CEO Dantoss
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="reviews__slider-card-content">
+                                                <p>
+                                                    Работы по установке насосного оборудования были выполнены
+                                                    качественно и
+                                                    в срок. Работая с нашими проектами, компания МЗСК проявила гибкость,
+                                                    взялась за выполнение нестандартного решения. Планируем и в
+                                                    дальнейшем
+                                                    продолжить совместную работу
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-bullets">
+                            <div class="reviews__slider-bullet"></div>
+                            <div class="reviews__slider-bullet"></div>
+                            <div class="reviews__slider-bullet"></div>
+                        </div>
+                        <div class="slider-arrows reviews__slider-arrows">
+                            <button class="slider-arrows__btn slider-arrows__btn--small slider-arrows__btn--prev">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-arrow-left">
+                                    <use xlink:href="#arrow-left"></use>
+                                </svg>
+                            </button>
+                            <button class="slider-arrows__btn slider-arrows__btn--small slider-arrows__btn--next">
+                                <svg width="14" height="14" aria-hidden="true" class="icon-arrow-right">
+                                    <use xlink:href="#arrow-right"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__partners">
+                <ul class="reviews__partners-list">
+                    <li class="reviews__partners-list-item">
+                        <div class="reviews__partners-card">
+                            <img src="img/partners/1.webp" alt="" class="reviews__partners-card-image">
+                        </div>
+                    </li>
+                    <li class="reviews__partners-list-item">
+                        <div class="reviews__partners-card">
+                            <img src="img/partners/2.webp" alt="" class="reviews__partners-card-image">
+                        </div>
+                    </li>
+                    <li class="reviews__partners-list-item">
+                        <div class="reviews__partners-card">
+                            <img src="img/partners/3.webp" alt="" class="reviews__partners-card-image">
+                        </div>
+                    </li>
+                    <li class="reviews__partners-list-item">
+                        <div class="reviews__partners-card">
+                            <img src="img/partners/4.webp" alt="" class="reviews__partners-card-image">
+                        </div>
+                    </li>
+                    <li class="reviews__partners-list-item">
+                        <div class="reviews__partners-card">
+                            <img src="img/partners/5.webp" alt="" class="reviews__partners-card-image">
+                        </div>
+                    </li>
+                    <li class="reviews__partners-list-item">
+                        <div class="reviews__partners-card">
+                            <img src="img/partners/6.webp" alt="" class="reviews__partners-card-image">
+                        </div>
+                    </li>
+                    <li class="reviews__partners-list-item">
+                        <div class="reviews__partners-card">
+                            <img src="img/partners/7.webp" alt="" class="reviews__partners-card-image">
+                        </div>
+                    </li>
+                    <li class="reviews__partners-list-item">
+                        <div class="reviews__partners-card">
+                            <img src="img/partners/8.webp" alt="" class="reviews__partners-card-image">
+                        </div>
+                    </li>
+                    <li class="reviews__partners-list-item">
+                        <div class="reviews__partners-card">
+                            <img src="img/partners/9.webp" alt="" class="reviews__partners-card-image">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="has-questions">
+    <div class="container">
+        <div class="has-questions__content">
+            <div class="has-questions__row">
+                <div class="has-questions__sidebar">
+                    <h2 class="small-heading has-questions__small-heading">
+                        Есть вопросы?
+                    </h2>
+                </div>
+                <div class="has-questions__main">
+                    <div class="has-questions__main-content">
+                        <h3 class="medium-heading has-questions__main-heading">
+                            Напишите нам, наши менеджеры свяжуться с вами в самое ближайшее время
+                        </h3>
+                        <form action="/" method="POST" class="has-questions__form" data-need-validation="">
+                            <div class="has-questions__form-fields">
+                                <div class="has-questions__form-field">
+                                    <input type="text" name="name" class="has-questions__form-input" placeholder="Имя"
+                                        required="">
+                                </div>
+                                <div class="has-questions__form-field">
+                                    <input type="text" name="phone" class="has-questions__form-input js-phone-input"
+                                        placeholder="Телефон" required="" data-parsley-phone="">
+                                </div>
+                                <div class="has-questions__form-field">
+                                    <input type="text" class="has-questions__form-input"
+                                        placeholder="Вопрос (необязательно)">
+                                </div>
+                            </div>
+                            <div class="has-questions__form-controls">
+                                <button type="submit" class="has-questions__form-submit">
+                                    Отправить
+                                </button>
+                                <div class="has-questions__form-policy">
+                                    <p>
+                                        Нажимая “Отправить” вы соглашаетесь с <br><a href="#">политикой
+                                            конфиденциальности</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="has-questions__image-container">
+                        <img src="img/contact-us.webp" alt="" class="has-questions__image">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <footer class="page-footer">
+            <div class="container">
+                <div class="page-footer__top-row">
+                    <nav class="page-footer__nav">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    О заводе
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Способы оплаты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    ИЖС
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Дилеры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Для строителя
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Услуги по доставке
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Калькулятор
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="page-footer__products">
+                        <a href="#" class="page-footer__products-link">
+                            Продукция
+                        </a>
+                        <ul class="page-footer__products-categories-list">
+                            <li class="page-footer__products-categories-list-item">
+                                <a href="#" class="page-footer__products-categories-link">
+                                    Кирпич силикатный ГОСТ 379-2015
+                                </a>
+                            </li>
+                            <li class="page-footer__products-categories-list-item">
+                                <a href="#" class="page-footer__products-categories-link">
+                                    Мелкие стеновые блоки из ячеистого бетона
+                                </a>
+                            </li>
+                            <li class="page-footer__products-categories-list-item">
+                                <a href="#" class="page-footer__products-categories-link">
+                                    Сухие строительные смеси марки СИЛма
+                                </a>
+                            </li>
+                            <li class="page-footer__products-categories-list-item">
+                                <a href="#" class="page-footer__products-categories-link">
+                                    Известесодержащее вяжущее
+                                </a>
+                            </li>
+                            <li class="page-footer__products-categories-list-item">
+                                <a href="#" class="page-footer__products-categories-link">
+                                    Песок кварцевый ГОСТ 8736-88
+                                </a>
+                            </li>
+                            <li class="page-footer__products-categories-list-item">
+                                <a href="#" class="page-footer__products-categories-link">
+                                    Утеплитель
+                                </a>
+                            </li>
+                            <li class="page-footer__products-categories-list-item">
+                                <a href="#" class="page-footer__products-categories-link">
+                                    Фасадная краска
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page-footer__contacts">
+                        <a href="tel:8362536724" class="page-footer__phone-link">8 (362) 53–67–24</a>
+                        <div class="page-footer__address">
+                            Республика Марий Эл, Медведевский р-н,<br> п.Силикатный ул.Мира, 1
+                        </div>
+                        <a href="mailto:zaomzsk12@gmail.com" class="page-footer__email">zaomzsk12@gmail.com</a>
+                        <div class="certificates page-footer__certificates">
+                            <h4 class="certificates__heading">
+                                Сертификаты
+                            </h4>
+                            <ul class="certificates__list">
+                                <li class="certificates__list-item">
+                                    <a href="#" class="certificates__card">
+                                        <img src="img/certificates/1.jpg" alt="" class="certificates__card-image">
+                                    </a>
+                                </li>
+                                <li class="certificates__list-item">
+                                    <a href="#" class="certificates__card">
+                                        <img src="img/certificates/2.jpg" alt="" class="certificates__card-image">
+                                    </a>
+                                </li>
+                                <li class="certificates__list-item">
+                                    <a href="#" class="certificates__card">
+                                        <img src="img/certificates/3.jpg" alt="" class="certificates__card-image">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+        
+        
+                </div>
+                <div class="page-footer__bottom-row">
+                    <div class="page-footer__copyright">
+                        © 2022 Марийский завод силикатного кирпича
+                    </div>
+                    <div class="page-footer__info">
+                        <a href="#" class="page-footer__policy-link">
+                            Политика конфиденциальности
+                        </a>
+                        <a href="#" class="page-footer__made-by">
+                            Сайт разработан
+                            <img src="img/mw-logo.svg" alt="" class="page-footer__made-by-logo">
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        </footer>        <style>
+            .ie-placeholder {
+                z-index: 4000;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #202020;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                
+            }
+            .ie-placeholder__message {
+                font-size: 2rem;
+                line-height: 1.2;
+                font-weight: 500;
+                margin: auto;
+            }
+            @supports (display: grid) {
+                .ie-placeholder {
+                    display: none;
+                }
+            }
+        </style>
+        <div class="ie-placeholder">
+            <div class="ie-placeholder__message">
+                Извините, ваш браузер не поддерживается
+            </div>
+        </div>        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="assets/js/backend.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+.news {
+    margin-bottom: 15rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 8rem;
+    }
+}
+
+.news__content {
+    padding: 0 var(--sidebar-width);
+
+    @include breakpoint(mobile) {
+        padding: 0;
+    }
+}
+
+.news__slider {
+    .swiper {
+        overflow: visible;
+    }
+
+    @include breakpointMF(small-tablet) {
+        .swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-gap: 6rem;
+            grid-row-gap: 3rem;
+        }
+    }
+
+    @include breakpoint(mobile) {
+        .swiper-slide {
+            width: 23rem;
+            margin-right: 1.4rem;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.news__slider-card {
+    display: flex;
+    flex-direction: column;
+
+    .no-touch &:hover,
+    .touch &:active {
+        .news__slider-card-row svg {
+            fill: var(--primary-color);
+        }
+    }
+}
+
+.news__slider-card-image-container {
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    &::before {
+        content: '';
+        display: block;
+        padding-bottom: 60%;
+    }
+}
+
+.news__slider-card-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news__slider-card-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.3rem;
+    }
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        flex-shrink: 0;
+        fill: #c4c4c4;
+        transition: fill 0.2s;
+
+        @include breakpoint(mobile) {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+}
+
+.news__slider-card-title {
+    width: 50%;
+    flex-grow: 1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 115%;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-grow: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 120%;
+    }
+}

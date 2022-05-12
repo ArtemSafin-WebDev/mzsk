@@ -1,0 +1,122 @@
+.page-header {
+    padding-top: 2rem;
+
+    @include breakpoint(mobile) {
+        padding-top: 1.2rem;
+    }
+}
+
+.page-header__row {
+    
+
+    @include breakpointMF(small-tablet) {
+        display: grid;
+        grid-template-columns: minmax(0, var(--sidebar-width)) minmax(0, 1fr);
+        align-items: center;
+    }
+
+    @include breakpoint(mobile) {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+.page-header__logo {
+    @include breakpointMF(small-tablet) {
+        display: none;
+    }
+
+    @include breakpoint(mobile) {
+        margin-right: auto;
+    }
+}
+
+.page-header__logo-image {
+    width: 4rem;
+    display: block;
+    height: auto;
+
+}
+
+.page-header__burger {
+    height: 4rem;
+    width: 6rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #2C2C60;
+    border-radius: .5rem;
+
+
+    display: none;
+
+    @include breakpoint(mobile) {
+        width: 5.7rem;
+        height: 3.2rem;
+      
+    }
+    & > span {
+        width: 2rem;
+        height: 1px;
+        background-color: var(--primary-color);
+        margin-bottom: 0.4rem;
+        transition: transform .2s, opacity .2s;
+
+        @include breakpoint(mobile) {
+            width: 2.5rem;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.page-header__main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @include breakpoint(mobile) {
+        display: contents;
+    }
+}
+
+.page-header__sidebar {
+    @include breakpoint(mobile) {
+        display: contents;
+    }
+}
+
+.page-header__nav {
+    @include breakpoint(mobile) {
+        margin-left: auto;
+    }
+}
+
+.page-header__nav-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .8rem;
+
+    @include breakpoint(mobile) {
+
+    }
+}
+
+.page-header__btns {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7.8rem;
+
+    @include breakpoint(mobile) {
+        display: none;
+    }
+
+}

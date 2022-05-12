@@ -1,0 +1,218 @@
+.has-questions {
+    margin-bottom: 6rem;
+}
+
+.has-questions__content {
+    border-radius: 0.8rem;
+    overflow: hidden;
+    background: #333366;
+    color: #faf8f5;
+    background-image: url('../img/has-question-desktop-illustration.webp');
+    background-size: 57rem auto;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+
+    @include breakpoint(mobile) {
+        background-size: 10.5rem auto;
+        background-position: right top;
+        background-image: url('../img/has-question-illustration-mobile.webp');
+    }
+}
+
+.has-questions__row {
+    display: grid;
+    grid-template-columns: minmax(0, var(--sidebar-width)) minmax(0, 1fr);
+
+    @include breakpoint(mobile) {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+.has-questions__sidebar {
+    padding: 2rem;
+    padding-top: 1.6rem;
+
+    @include breakpoint(mobile) {
+        display: contents;
+    }
+}
+
+.has-questions__main {
+    display: flex;
+
+    @include breakpoint(mobile) {
+        display: contents;
+    }
+}
+
+.has-questions__main-content {
+    width: 50%;
+    flex-grow: 1;
+    padding-top: 1.6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-grow: 0;
+        padding: 1.2rem;
+        padding-bottom: 6rem;
+    }
+}
+
+.has-questions__image-container {
+    width: 67rem;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        height: 24.6rem;
+        position: relative;
+    }
+}
+
+.has-questions__image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    @include breakpoint(mobile) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.has-questions__small-heading {
+    @include breakpoint(mobile) {
+        margin-bottom: 3.3rem;
+        padding: 1.2rem;
+    }
+}
+
+.has-questions__main-heading {
+    max-width: 60rem;
+    margin-bottom: 5rem;
+
+    @include breakpoint(mobile) {
+        max-width: none;
+    }
+}
+
+.has-questions__form {
+    margin-top: auto;
+    padding-right: 17.8rem;
+
+    @include breakpoint(mobile) {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.has-questions__form-fields {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-gap: 3rem;
+    margin-bottom: 6.5rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 4rem;
+        grid-gap: 2.5rem;
+    }
+}
+
+.has-questions__form-field {
+}
+
+.has-questions__form-input {
+    display: block;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #faf8f5;
+    line-height: 120%;
+    height: 4.5rem;
+    border-bottom: 1px solid rgba(#faf8f5, 0.2);
+
+    @include placeholder {
+        color: rgba(250, 248, 245, 0.2);
+        color: #faf8f5;
+    }
+}
+
+.has-questions__form-controls {
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+
+    @include breakpoint(mobile) {
+        gap: 2rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.has-questions__form-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.2rem 2rem;
+    background: #faf8f5;
+    border-radius: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 115%;
+    color: var(--primary-color);
+
+    @include breakpoint(mobile) {
+        padding: 1.8rem 2.4rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 120%;
+    }
+    &:link,
+    &:visited {
+        color: var(--primary-color);
+    }
+}
+
+.has-questions__form-policy {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.3);
+    width: 50%;
+    flex-grow: 1;
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-grow: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 120%;
+    }
+    a {
+        color: #faf8f5;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        transition: all 0.2s;
+        &:link,
+        &:visited {
+            color: #faf8f5;
+        }
+
+        .no-touch &:hover,
+        .touch &:active {
+            text-decoration-color: #faf8f5;
+        }
+    }
+}
